@@ -35,7 +35,7 @@ Comparison of different JavaScript Methods:
 | `charAt`      | String | returns character at specified position          | Character |
 | `toUpperCase` | String | turn into upper case                             | String  |
 | `toLowerCase` | String | turn into lower case                             | String  |
-| ========== | ===== | ==================================================== | ======= |
+| ========== | ===== | ==================================================== | ========== |
 | `forEach`  | Array | loop over array items                                | Individual Item |
 | `includes` | Array | check if array contains item                         | Boolean |
 | `filter`   | Array | filter down the item                                 | Array   |
