@@ -23,36 +23,40 @@
 
 Comparison of different JavaScript Methods:
 
-| Methods       | Types  | Description |
-| ------------- | ------ | ------------------------------------------------ |
-| `startsWith`  | String | check if strings starts with specified character |
-| `endsWith`    | String | check if strings ends with specified character |
-| `includes`    | String | check if strings contains specified character |
-| `slice`       | String | cut a string |
-| `split`       | String | takes pattern and makes array |
-| `replace`     | String | replace with another string, manage case sensitivity with regex |
-| `repeat`      | String | make number of strings |
-| `charAt`      | String | returns character at specified position |
-| `toUpperCase` | String | turn into upper case |
-| `toLowerCase` | String | turn into lower case |
-| ========== | ===== | =================== |
-| `forEach`  | Array | loop over array items |
-| `includes` | Array | check if array contains item |
-| `filter`   | Array | filter down the item |
-| `map`      | Array | call a function on every item |
-| `reduce`   | Array | call a function each item and reduce into single value |
-| `some`     | Array | check if at least 1 item is passed |
-| `every`    | Array | check if all items are passed |
-| `sort`     | Array | arrange the order of array |
-| `reverse`  | Array | arrange the order of array in opposite |
-| ================ | ====== | =================== |
-| `Object.create()`  | Object | create new object by using existing object as prototype of the newly created object |
-| `Object.keys()`    | Object | returns array of names of object's own string properties |
-| `Object.values()`  | Object | returns array of values of object's own string properties |
-| `Object.entries()` | Object | returns array of key value pairs of object's own string properties |
-| `Object.assign()`  | Object | it copies the values of object's own string properties from source object to a target object |
-| `Object.freeze()`  | Object | object freezes so can't delete/change it's properties |
-| `hasOwnProperty()` | Object | checks property inside object and returns boolean |
+| Methods       | Types  | Description                                      | Returns |
+| ------------- | ------ | ------------------------------------------------ | ------- |
+| `startsWith`  | String | check if strings starts with specified character | Boolean |
+| `endsWith`    | String | check if strings ends with specified character   | Boolean |
+| `includes`    | String | check if strings contains specified character    | Boolean |
+| `slice`       | String | cut a string                                     | String  |
+| `split`       | String | takes pattern and makes array                    | String  |
+| `replace`     | String | replace with another string, manage case sensitivity with regex | String  |
+| `repeat`      | String | make number of strings                           | String  |
+| `charAt`      | String | returns character at specified position          | Character |
+| `toUpperCase` | String | turn into upper case                             | String  |
+| `toLowerCase` | String | turn into lower case                             | String  |
+| ========== | ===== | ==================================================== | ======= |
+| `forEach`  | Array | loop over array items                                | Individual Item |
+| `includes` | Array | check if array contains item                         | Boolean |
+| `filter`   | Array | filter down the item                                 | Array   |
+| `map`      | Array | call a function on every item                        | Array   |
+| `reduce`   | Array | call a function each item and reduce into single value | Single Value |
+| `some`     | Array | check if at least 1 item is passed                   | Boolean |
+| `every`    | Array | check if all items are passed                        | Boolean |
+| `sort`     | Array | arrange the order of array                           | Array   |
+| `reverse`  | Array | arrange the order of array in opposite               | Array   |
+| `Array.from()`| Array | change all thing that are array - like to true array | Array   |
+| `Array.of()`| Array | create array from every arguments passed into it    | Array   |
+| `Array.isArray()`| Array | check if it is array                           | Boolean |
+| `find`     | Array | returns value of first element that passes a test    | Single Value |
+| ================== | ====== | =========================================== | ========== |
+| `Object.create()`  | Object | create new object by using existing object as prototype of the newly created object | Object |
+| `Object.keys()`    | Object | returns array of names of object's own string properties | Array |
+| `Object.values()`  | Object | returns array of values of object's own string properties | Array |
+| `Object.entries()` | Object | returns array of key value pairs of object's own string properties | Array |
+| `Object.assign()`  | Object | it copies the values of object's own string properties from source object to a target object | Object |
+| `Object.freeze()`  | Object | object freezes so can't delete/change it's properties | Object |
+| `hasOwnProperty()` | Object | checks property inside object as its own property | Boolean |
 
 `Property Add`:
 ```sh
