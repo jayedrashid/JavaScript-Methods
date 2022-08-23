@@ -13,6 +13,7 @@
 
 <!-- - [Summary](#summary) -->
 
+- [Number Methods](#number-methods)
 - [String Methods](#string-methods)
 - [Array Methods](#array-methods)
 - [Object Methods](#object-methods)
@@ -23,8 +24,22 @@
 
 Comparison of different JavaScript Methods:
 
-| Methods       | Types  | Description                                      | Returns | Mutable |
-| ------------- | ------ | ------------------------------------------------ | ------- | - |
+| Methods         | Types  | Description                                      | Returns | Mutable |
+| --------------- | ------ | ------------------------------------------------ | ------- | - |
+| `parseInt`      | Number | parses given string argument and returns integer | Number | N |
+| `toString`      | Number | returns the given number in the form of a string | String | N |
+| `toExponential` | Number | returns string exponential notation of given number | String | N |
+| `toFixed`       | Number | rounds the string to a specified number of decimals | String | N |
+| `toPrecision`   | Number | formats a number to a specified length | String | N |
+| `valueOf`       | Number | returns the primitive value of a Number object | String | N |
+| `toLocaleString`| Number | returns a Date object as a string | String | N |
+| `parseFloat`    | Number | parses a value as a string and returns the first number | Number | N |
+| `isInteger`     | Number | returns true if a value is an integer of the datatype Number, otherwise false | Boolean | N |
+| `isFinite`      | Number | returns true if a value is a finite number | Boolean | N |
+| `isSafeInteger` | Number | returns true if a number is a safe integer, otherwise false | Boolean | N |
+| `Number`        | Number | used to convert JavaScript variables to numbers | Number | N |
+| `isNaN`         | Number | returns true if the given value is NaN and its type is Number, otherwise false | Boolean | N |
+| ============= | ====== | ================================================ | ======= | = |
 | `startsWith`  | String | check if strings starts with specified character | Boolean | N |
 | `endsWith`    | String | check if strings ends with specified character   | Boolean | N |
 | `includes`    | String | check if strings contains specified character    | Boolean | N |
@@ -55,18 +70,18 @@ Comparison of different JavaScript Methods:
 | `every`    | Array | check if all items are passed                        | Boolean | N |
 | `sort`     | Array | arrange the order of array                           | Array   | N |
 | `reverse`  | Array | arrange the order of array in opposite               | Array   | N |
-| `Array.from()`| Array | change all thing that are array - like to true array | Array   | N |
-| `Array.of()`| Array | create array from every arguments passed into it    | Array   | N |
-| `Array.isArray()`| Array | check if it is array                           | Boolean | N |
+| `Array.from`| Array | change all thing that are array - like to true array | Array   | N |
+| `Array.of` | Array | create array from every arguments passed into it    | Array   | N |
+| `Array.isArray`| Array | check if it is array                           | Boolean | N |
 | `find`     | Array | returns value of first element that passes a test    | Single Value | N |
-| ================== | ====== | =========================================== | ========== | = |
-| `Object.create()`  | Object | create new object by using existing object as prototype of the newly created object | Object | N |
-| `Object.keys()`    | Object | returns array of names of object's own string properties | Array | N |
-| `Object.values()`  | Object | returns array of values of object's own string properties | Array | N |
-| `Object.entries()` | Object | returns array of key value pairs of object's own string properties | Array | N |
-| `Object.assign()`  | Object | it copies the values of object's own string properties from source object to a target object | Object | N |
-| `Object.freeze()`  | Object | object freezes so can't delete/change it's properties | Object | N |
-| `hasOwnProperty()` | Object | checks property inside object as its own property | Boolean | N |
+| ================ | ====== | =========================================== | ========== | = |
+| `Object.create`  | Object | create new object by using existing object as prototype of the newly created object | Object | N |
+| `Object.keys`    | Object | returns array of names of object's own string properties | Array | N |
+| `Object.values`  | Object | returns array of values of object's own string properties | Array | N |
+| `Object.entries` | Object | returns array of key value pairs of object's own string properties | Array | N |
+| `Object.assign`  | Object | it copies the values of object's own string properties from source object to a target object | Object | N |
+| `Object.freeze`  | Object | object freezes so can't delete/change it's properties | Object | N |
+| `hasOwnProperty` | Object | checks property inside object as its own property | Boolean | N |
 
 `Property Add`:
 ```sh
@@ -86,21 +101,29 @@ delete obj.name;
 
 ---
 
-String Methods
+## Number Methods
+
+<p align="center">
+ <img width="400px" src="https://scontent.fdac99-1.fna.fbcdn.net/v/t1.6435-9/124615633_134976765049605_8169739762146109499_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=973b4a&_nc_ohc=NjP_MJ1dmhwAX_DAPzj&_nc_ht=scontent.fdac99-1.fna&oh=00_AT_WJtXBZdHf9uVxfGGIZJCYIbQ8t3ecn-UbYoxxM4m3EQ&oe=632A5EB9" />
+ <h2 align="center"></h2>
+</p>
+
+
+## String Methods
 
 <p align="center">
  <img width="400px" src="https://res.cloudinary.com/practicaldev/image/fetch/s--LLK9xR01--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://cl.ly/1S3N0m1Z1L11/Image%25202018-07-12%2520at%252011.45.54%2520AM.png" />
  <h2 align="center"></h2>
 </p>
 
-Array Methods
+## Array Methods
 
 <p align="center">
  <img width="400px" src="https://res.cloudinary.com/practicaldev/image/fetch/s--uLpFFtBT--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://cl.ly/3n242u0W3O3J/Image%25202018-06-24%2520at%25208.05.54%2520PM.png" />
  <h2 align="center"></h2>
 </p>
 
-Object Methods
+## Object Methods
 
 <p align="center">
  <img width="400px" src="https://www.positioniseverything.net/wp-content/uploads/2022/02/Accessing-Object-Methods-in-JavaScript-300x200.jpg" />
