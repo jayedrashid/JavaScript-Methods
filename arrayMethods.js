@@ -1,6 +1,20 @@
 // *** Array Methods ***
 
-// 1. forEach()
+// =========== 0. splice() ===========
+
+// This method changes the contents of an array by removing or replacing existing elements and/or adding new elements
+// const months = ['Jan', 'March', 'April', 'June'];
+// months.splice(1, 0, 'Feb');
+// // inserts at index 1
+// console.log(months);
+// // ["Jan", "Feb", "March", "April", "June"]
+
+
+
+
+
+// =========== 1. forEach() ===========
+
 // This method can help you to loop over array's items.
 // const arr = [1, 2, 3, 4, 5, 6];
 
@@ -18,7 +32,8 @@
 
 
 
-// 2. includes()
+// =========== 2. includes() ===========
+
 // This method check if array includes the item passed in the method.
 // const arr = [1, 2, 3, 4, 5, 6];
 
@@ -31,8 +46,9 @@
 
 
 
-// 3. filter()
-// This method create new array with only elements passed condition inside the provided function.
+
+// =========== 3. filter() ===========
+// This method create new array with only elements passed with condition inside the provided function.
 // const arr = [1, 2, 3, 4, 5, 6];
 
 // const newArr = arr.filter(num => num > 3);
@@ -45,15 +61,54 @@
 
 // to create a filtered array that has all elements with values less than 10 removed.
 
+// const scores = [10, 30, 15, 25, 50, 40, 5];
+
+// const filterScores = scores.filter((score) => {
+//     return score > 20;
+// });
+
+// console.log(filterScores);      // [30, 25, 50, 40]
+
+
+
+
+
+// const arr = [12, 5, 8, 130, 44];
+
 // function isBigEnough(value) {
 //     return value >= 10
 // }
 
-// const arr = [12, 5, 8, 130, 44];
-
 // const newArr = arr.filter(isBigEnough)
 
 // console.log(newArr);      // [12, 130, 44]
+
+
+
+
+
+
+// Find properties of objects from an array of premium users.
+
+// const users = [
+//     { name: 'shaun', premium: true },
+//     { name: 'yoshi', premium: false },
+//     { name: 'mario', premium: false },
+//     { name: 'chun-li', premium: true }
+// ];
+
+// const premiumUsers = users.filter(user => {
+//     return user.premium;
+// });
+
+// console.log(premiumUsers);
+
+// // [
+// //     { name: 'shaun', premium: true },
+// //     { name: 'chun-li', premium: true }
+// // ]
+
+
 
 
 
@@ -125,6 +180,7 @@
 
 
 
+
 // Searching in array
 
 // let fruits = ['apple', 'banana', 'grapes', 'mango', 'orange']
@@ -182,7 +238,9 @@
 
 
 
-// 4. map()
+
+// =========== 4. map() ===========
+
 // This method create new array by calling the provided function in every element.
 // const arr = [1, 2, 3, 4, 5, 6];
 
@@ -207,6 +265,53 @@
 
 
 
+// const prices = [20, 10, 30, 25, 15, 40, 80, 5];
+
+// const salesPrices = prices.map((price) => {
+//     return price / 2;
+// });
+
+// console.log(salesPrices);      // [10, 5, 15, 12.5, 7.5, 20, 40, 2.5]
+
+
+
+
+
+
+// Find product prices are over 30 should be cut by half.
+
+// const prices = [20, 10, 30, 25, 15, 40, 80, 5];
+
+// const products = [
+//     { name: 'gold star', price: 20 },
+//     { name: 'mushroom', price: 40 },
+//     { name: 'green shells', price: 30 },
+//     { name: 'banana skin', price: 10 },
+//     { name: 'red shells', price: 50 }
+// ];
+
+// const saleProduct = users.map(product => {
+//     if(product.price > 30) {
+//       return { name: product.name, price: product.price / 2 }
+//     } else {
+//       return product;
+//     }
+// });
+
+// console.log(saleProduct);
+
+// [
+//     { name: 'gold star', price: 20 },
+//     { name: 'mushroom', price: 20 },
+//     { name: 'green shells', price: 30 },
+//     { name: 'banana skin', price: 10 },
+//     { name: 'red shells', price: 25 }
+// ]
+
+
+
+
+
 
 // Using map generically
 
@@ -220,7 +325,7 @@
 
 
 
-// 5. reduce()
+// =========== 5. reduce() ===========
 
 // The reduce() method applies a function against an accumulator and each element in the array(from left to right) to reduce it to a single value - MDN
 // const arr = [1, 2, 3, 4, 5, 6];
@@ -260,7 +365,8 @@
 
 
 
-// 6. some()
+// =========== 6. some() ===========
+
 // This method check if at least one of array's item passed the condition. If passed, it return 'true' otherwise 'false'.
 // const arr = [1, 2, 3, 4, 5, 6];
 
@@ -299,7 +405,7 @@
 
 
 
-// 7. every()
+// =========== 7. every() ===========
 
 // This method check if all array's item passed the condition. If passed, it return 'true' otherwise 'false'.
 // const arr = [1, 2, 3, 4, 5, 6];
@@ -328,7 +434,7 @@
 
 
 
-// 8. sort()
+// =========== 8. sort() ===========
 
 // This method used to arrange / sort array's item either ascending or descending order.
 // const arr = [1, 2, 3, 4, 5, 6];
@@ -411,7 +517,7 @@
 
 
 
-// 9. Array.from()
+// =========== 9. Array.from() ===========
 
 // This change all thing that are array - like or iterable into true array especially when working with DOM, so that you can use other array methods like reduce, map, filter and so on.
 // const name = 'frugence';
@@ -431,7 +537,9 @@
 
 
 
-// 10. Array.of()
+
+
+// =========== 10. Array.of() ===========
 
 // This create array from every arguments passed into it.
 // const num = Array.of(1, 2, 3, 4, 5, 6);
@@ -441,7 +549,8 @@
 
 
 
-// 11. find()
+// =========== 11. find() ===========
+
 // It returns the value of the first element that passes a test.
 // It returns undefined if no elements are found.
 // It executes a function for each array element.
@@ -455,6 +564,4 @@
 // });
 
 // console.log(found);     // 0.3
-
-
 
